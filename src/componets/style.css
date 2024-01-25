@@ -1,0 +1,176 @@
+.header {
+    height: 70px;
+    width: 100%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.logo {
+    margin-left: 2px;
+    margin-top: 10px;
+    color: rgb(0, 189, 189);
+}
+
+.footer {
+    height: 300px;
+    border: 1px solid black;
+    background-color: #4f4f4f;
+    color: white;
+    display: flex;
+    padding: 2%;
+    gap: 20px;
+}
+
+.footer > div {
+    height: 80%;
+    width: 30%;
+    margin: auto;
+}
+
+.home {
+    height: 600px;
+}
+
+.homecard {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.card {
+    padding: 1%;
+    width: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    align-items: center;
+}
+
+.card > div {
+    width: 90%;
+    align-items: center;
+}
+
+.card > div > img {
+    height: 80%;
+    width: 80%;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer > div {
+        width: 100%;
+     
+    }
+
+    .homecard {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card {
+        margin: auto;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .home {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        margin-left: 0;
+    }
+
+    .footer {
+        padding: 5%;
+    }
+
+    .homecard {
+        padding: 5%;
+    }
+
+    .card {
+        padding: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header{
+    height:70px;
+    width:100%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+}
+.logo{
+    margin-left: 2px;
+    margin-top: 10px;
+    color: rgb(0, 189, 189);
+}
+.footer{
+height: 300px;
+border: 1px solid black;
+background-color: #4f4f4f;
+color: white;
+display: flex;
+padding: 2%;
+gap: 20px;
+
+}
+.footer>div{
+ height:80%;
+ width: 30%;
+ margin: auto;
+}
+.home{
+    height:600px;
+
+}
+.homecard{
+    display: flex;
+   justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+}
+.card{
+    padding: 1%;
+    width:300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    align-items: center;
+}
+.card>div{
+width: 90%;
+align-items: center;
+
+}
+.card>div>img{
+height: 80%;
+width: 80%;
+
+} */
