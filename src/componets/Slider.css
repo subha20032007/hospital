@@ -1,0 +1,36 @@
+.slider-container {
+    position: relative;
+    max-width: 100%; 
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }
+  
+
+  @media (max-width: 600px) {
+    .arrow-button {
+      font-size: 1.5rem;
+    }
+  }

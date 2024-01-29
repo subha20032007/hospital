@@ -1,20 +1,56 @@
-import React from 'react'
+
 import  "./style.css"
 import { Card } from './Card'
+import { Healthcard } from './Healthcard';
+import { Excellencecard } from './Excellencecard';
+import Slider from './Slider';
 
+  const healthData=[
+    {title:"Critical Care", url: "https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/cardiology-adult.png?itok=8qvE9gMq" },
+    {title:"Critical Care", url: "https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/cardiology-adult.png?itok=8qvE9gMq" },
+    {title:"Critical Care", url: "https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/cardiology-adult.png?itok=8qvE9gMq" },
+    {title:"Critical Care", url: "https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/cardiology-adult.png?itok=8qvE9gMq" },
+    {title:"Critical Care", url: "https://www.narayanahealth.org/sites/default/files/styles/our_specialities/public/cardiology-adult.png?itok=8qvE9gMq" },
+  ]
+  const ExcellenceData=[
+    {title:"4.2 Million+", des:"lorem ufuf fufdhf",url: "https://www.narayanahealth.org/sites/default/files/styles/clinical_excellence__310_x_188_/public/medical-specialities-min.jpg?itok=ttSBPRhL" },
+    {title:"22", des:"19 State-of-the-art Hospitals | 3 Heart Centres",url: "https://www.narayanahealth.org/sites/default/files/styles/clinical_excellence__310_x_188_/public/medical-procedures-min.jpg?itok=Tg8bfhFA" },
+    {title:"18000+", des:"fsdaf gdsfag gsa",url: "https://www.narayanahealth.org/sites/default/files/styles/clinical_excellence__310_x_188_/public/hospital-india-min.jpg?itok=SFBb0o8d" },
+  ]
 export const Home = () => {
+
   return (
     <div>
-    
-    <div class="location">
-      <h1>Locations</h1>
+     <div className='slider' >
+     <Slider/>
+     </div>
+  
+    <h1>Our Specialities</h1>
+    <div class="our-Specialities">
+     {
+      healthData.map((el)=>(
+        <Healthcard image={el.url}
+          title={el.title}
+          />
+      ))
+     }
+        
     </div>
-    <div class="health-library">
-      <h1>HEALTH LIBRARY</h1>
-
+    <h1>Clinical Excellence</h1>
+    <div class="Clinical_Excellence">
+    {
+     ExcellenceData.map((el)=>(
+        <Excellencecard image={el.url}
+          title={el.title}
+          des={el.des}
+          />
+      ))
+     }
     </div>
     <div className='explore'>
-      <img src="https://www.medcare.ae/fileadmin/user_upload/csm_MedcareHospitality1_33dacc8a4c.jpg" alt="" />
+    <h1>Explore
+    </h1>
+
     </div>
     <main className="main-content">
     <Card

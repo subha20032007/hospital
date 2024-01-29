@@ -18,12 +18,7 @@ export const Navbar = () => {
         <div className="bar"></div>
       </div>
 
-      <ul className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
-        <li>Home</li>
-        <li>Services</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+      
     </nav>
   );
 };

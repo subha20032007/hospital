@@ -1,9 +1,11 @@
 import React from 'react'
-
-export const Healthcard = () => {
+import "./style.css"
+export const Healthcard = ({image,title}) => {
   return (
-    <div>
+    <div className='healthcard' >
+      <div><img src={image} alt={title}/></div>
+      <div> <h3>{title}</h3></div>
         
-    </div>
+        </div>
   )
 }
