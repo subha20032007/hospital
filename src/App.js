@@ -1,16 +1,18 @@
 
 import './App.css';
-import { Header } from './componets/Header';
-import { Home } from './componets/Home';
 import { Footer } from './componets/Footer';
+
+import { Home } from './componets/Home';
+import { Navbar } from './componets/Navbar';
+
 
 function App() {
   return (
     <div className="App">
-    <Header/>
-    <Home/>
-    <Footer/>
-    </div>
+   <Navbar/>  
+   <Home/>
+  <Footer/>
+  </div>
   );
 }
 
